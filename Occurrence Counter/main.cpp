@@ -27,12 +27,12 @@ int main(int argc, char **argv)
 					p++;
 					if(!*p)
 					{
-						p = argv[1];
+						p = argv[1];	// no overlapping occurrences
 						count++;
 					}
 				}
 				else
-					p = argv[1];
+					p = argv[1];	// may miss occurrences in some cases...
 			}
 			cout<<count<<" occurances of the string \""<<argv[1]<<"\" were found in the file \""<<argv[2]<<'\"'<<endl;
 			fclose(searchFile);
