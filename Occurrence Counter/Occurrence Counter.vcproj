@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="to do counter"
+	Name="Occurrence Counter"
 	ProjectGUID="{E789C300-C38F-4C5D-9539-85D120D7EF8B}"
 	RootNamespace="todocounter"
 	Keyword="Win32Proj"
