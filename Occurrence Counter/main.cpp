@@ -13,10 +13,10 @@ int main(int argc, char **argv)
 	unsigned int count = 0;
 
 	if(argc!=3 || !*argv[1])
-		cout<<"Wrong usage!\nThe correct argumants are:\n"<<argv[0]<<" [(nonempty) search string] [file to search]"<<endl;
+		cout<<"Wrong usage!\nThe correct arguments are:\n"<<argv[0]<<" [(nonempty) search string] [file to search]"<<endl;
 	else
 	{
-		cout<<"Counting occurances of the string \""<<argv[1]<<"\" in the file \""<<argv[2]<<"\"..."<<endl;
+		cout<<"Counting occurrences of the string \""<<argv[1]<<"\" in the file \""<<argv[2]<<"\"..."<<endl;
 		if(searchFile = fopen(argv[2],"r"))
 		{
 			p = argv[1];
@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 				else
 					p = argv[1];	// may miss occurrences in some cases...
 			}
-			cout<<count<<" occurances of the string \""<<argv[1]<<"\" were found in the file \""<<argv[2]<<'\"'<<endl;
+			cout<<count<<" occurrences of the string \""<<argv[1]<<"\" were found in the file \""<<argv[2]<<'\"'<<endl;
 			fclose(searchFile);
 		}
 		else
